@@ -179,7 +179,7 @@
     <value>开始</value>
   </data>
   <data name="ScreenRecordForm_StartRecording_does_not_exist" xml:space="preserve">
-    <value>{0} 不存在.
+    <value>.
 
 你想自动下载吗?</value>
   </data>

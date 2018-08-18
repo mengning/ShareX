@@ -1194,9 +1194,9 @@ namespace ShareX
 
             if (!File.Exists(ffmpegPath))
             {
-                if (MessageBox.Show(string.Format(Resources.ScreenRecordForm_StartRecording_does_not_exist, ffmpegPath),
-                    "ShareX - " + Resources.ScreenRecordForm_StartRecording_Missing + " ffmpeg.exe", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
-                {
+                if (MessageBox.Show(string.Format("{0} Not Exist!", ffmpegPath),
+                    "Recorder Module Not Exist!", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+                {/*
                     DialogResult downloadDialogResult = FFmpegDownloader.DownloadFFmpeg(false, DownloaderForm_InstallRequested);
 
                     if (downloadDialogResult == DialogResult.OK)
@@ -1212,7 +1212,7 @@ namespace ShareX
                     else if (downloadDialogResult == DialogResult.Cancel)
                     {
                         return false;
-                    }
+                    }*/
                 }
                 else
                 {

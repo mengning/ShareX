@@ -340,6 +340,11 @@ namespace ShareX
 
         private void DoUploadJob()
         {
+            Program.Settings.ShowUploadWarning = false;
+            Program.DefaultTaskSettings.AfterCaptureJob = Program.DefaultTaskSettings.AfterCaptureJob.Remove(AfterCaptureTasks.UploadImageToHost);
+            RequestSettingUpdate = true;
+            Stop();
+            /*
             if (Program.Settings.ShowUploadWarning && MessageBox.Show(Resources.UploadTask_DoUploadJob_First_time_upload_warning_text,
                 "ShareX - " + Resources.UploadTask_DoUploadJob_First_time_upload_warning,
                 MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.No)
@@ -410,7 +415,7 @@ namespace ShareX
                 {
                     Info.Result.IsURLExpected = false;
                 }
-            }
+            }*/
         }
 
         private bool DoUpload(int retry = 0)

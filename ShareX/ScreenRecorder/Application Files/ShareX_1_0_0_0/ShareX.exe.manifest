@@ -1,0 +1,1643 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="ShareX.exe" version="1.0.0.0" publicKeyToken="63ac841fbbab0fa7" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="ShareX_Icon.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="ShareX" version="12.3.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="ShareX.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC 清单选项
+         若想要更改 Windows 用户帐户控制级别，请
+         将 requestedExecutionLevel 节点替换为下述某项。
+
+       <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+       <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+       <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+        若想要使用文件和注册表虚拟化以实现向后
+        兼容，请删除 requestedExecutionLevel 节点。
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="FluentFTP.dll" size="232960">
+      <assemblyIdentity name="FluentFTP" version="19.2.2.0" publicKeyToken="F4AF092B1D8DF44F" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>qRF33XjE+GTOEMvx+4qtY2gPeWWm73IE5CFOsyKjTic=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ImageListView.dll" size="263168">
+      <assemblyIdentity name="ImageListView" version="11.0.4.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>qTPbbkfxrutqmMMDPuxGTsaNAliO78kxtEW7EE8Dk8M=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Interop.IWshRuntimeLibrary.dll" size="37376">
+      <assemblyIdentity name="Interop.IWshRuntimeLibrary" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>EziuLO8jV+yQ6+0GD+BSTx8yDBCBgi10qLaHbQsi8C8=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Interop.Shell32.dll" size="38400">
+      <assemblyIdentity name="Interop.Shell32" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>Bk2ATaWqVK3c9rZvgtXsS94XD5QfmhLx0A3oRrQYcPw=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MegaApiClient.dll" size="113152">
+      <assemblyIdentity name="MegaApiClient" version="1.6.3.424" publicKeyToken="0480D311EFBEB4E2" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>Ack5RR26OEgmu/o+YphjfhlIeijZMta3QDj0zVpYYok=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Newtonsoft.Json.dll" size="662528">
+      <assemblyIdentity name="Newtonsoft.Json" version="11.0.0.0" publicKeyToken="30AD4FE6B2A6AEED" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>9Yw3T/yq5ONtdA2Q+/f+cNCrtzKM2a86CntwgD6ZS6Q=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Renci.SshNet.dll" size="422912">
+      <assemblyIdentity name="Renci.SshNet" version="2016.1.0.0" publicKeyToken="1CEE9F8BDE3DB106" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>9jFe0UZDj3cCAzaBBD+P6WkO05oqvJoZIkZCSUSjono=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ShareX.exe" size="1881032">
+      <assemblyIdentity name="ShareX" version="12.3.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>s6JXeYiytbSGys4IpPrmZ1haa50vWNIfQbjwofnYoLM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ShareX.HelpersLib.dll" size="1062400">
+      <assemblyIdentity name="ShareX.HelpersLib" version="12.3.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>4i+Siinzv2E6ml/vhEVDe7OPh9K0pyz6ihTcXimR4zw=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ShareX.HelpersLib.resources.dll" size="42496">
+      <assemblyIdentity name="ShareX.HelpersLib.resources" version="12.3.0.0" language="de" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>HETbVIwkQBVDTkxnQVSruCJu9VOc/Ym2xm0KUgV/z1A=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="es\ShareX.HelpersLib.resources.dll" size="31744">
+      <assemblyIdentity name="ShareX.HelpersLib.resources" version="12.3.0.0" language="es" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>/VGbbA3+qrEGRMnoYGmziTLe2MP7Lq9X62JVvKq4Axo=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="es-MX\ShareX.HelpersLib.resources.dll" size="53760">
+      <assemblyIdentity name="ShareX.HelpersLib.resources" version="12.3.0.0" language="es-MX" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>1zAI9WgDxgepNTTS0ZtmhSiUwf5FqycDE7/IZl8ASsc=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="fr\ShareX.HelpersLib.resources.dll" size="48640">
+      <assemblyIdentity name="ShareX.HelpersLib.resources" version="12.3.0.0" language="fr" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>gnSf+jm5+t7R4pgYBrZFeymK5lHppz+fc4w1Q27Nr20=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="hu\ShareX.HelpersLib.resources.dll" size="30720">
+      <assemblyIdentity name="ShareX.HelpersLib.resources" version="12.3.0.0" language="hu" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>lUTMfHgRBq4U6E5rPVDI5qUVZcR/Jcxz1n1eKV4806c=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="id-ID\ShareX.HelpersLib.resources.dll" size="50176">
+      <assemblyIdentity name="ShareX.HelpersLib.resources" version="12.3.0.0" language="id-ID" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>KdyqMryPlKnuay3ktFlx4pD8+/l49njQKx2cmo+R7cE=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="it-IT\ShareX.HelpersLib.resources.dll" size="49152">
+      <assemblyIdentity name="ShareX.HelpersLib.resources" version="12.3.0.0" language="it-IT" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>ApxtvD6OCZwPqCIFHTyJHJIZPwzea518a9uuZGb8c00=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ko-KR\ShareX.HelpersLib.resources.dll" size="51712">
+      <assemblyIdentity name="ShareX.HelpersLib.resources" version="12.3.0.0" language="ko-KR" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>8uBHGI/042lI/2zE9t6wkgzzjRDCX9ToX+Jcp6mIg64=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="nl-NL\ShareX.HelpersLib.resources.dll" size="40960">
+      <assemblyIdentity name="ShareX.HelpersLib.resources" version="12.3.0.0" language="nl-NL" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>C0t1AIRygBFS26QonqZfUSlvcnK9iCuuVoNkV0iXwXA=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="pt-BR\ShareX.HelpersLib.resources.dll" size="45056">
+      <assemblyIdentity name="ShareX.HelpersLib.resources" version="12.3.0.0" language="pt-BR" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>3VcyKHv72h5KdMQL+OJQ3i9zBtr7XTc82ke1+/SUpHM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ru\ShareX.HelpersLib.resources.dll" size="59392">
+      <assemblyIdentity name="ShareX.HelpersLib.resources" version="12.3.0.0" language="ru" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>FJ0ZLlcUUqs6KgOqBASqLcCaqtRd11NqXex2/vvq+I8=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="tr\ShareX.HelpersLib.resources.dll" size="51712">
+      <assemblyIdentity name="ShareX.HelpersLib.resources" version="12.3.0.0" language="tr" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>S3quh9ejgArowWJNBLU3CLz2Gt8UUGigXBcbweMR/i0=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="uk\ShareX.HelpersLib.resources.dll" size="24576">
+      <assemblyIdentity name="ShareX.HelpersLib.resources" version="12.3.0.0" language="uk" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>fcn9VpHsZ8BtejvoQxEW4JOa1cjQ2wy0NMxYUGzkgWI=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="vi-VN\ShareX.HelpersLib.resources.dll" size="39424">
+      <assemblyIdentity name="ShareX.HelpersLib.resources" version="12.3.0.0" language="vi-VN" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>e23qkrIpgWyuk90o6aCCETi+XAJalOmEkiHeqo3iHoA=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="zh-CN\ShareX.HelpersLib.resources.dll" size="49664">
+      <assemblyIdentity name="ShareX.HelpersLib.resources" version="12.3.0.0" language="zh-CN" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>JtFTq6BMVmkFhxDESWmHDWWEYpX3/wWixrYlgcfbHUM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="zh-TW\ShareX.HelpersLib.resources.dll" size="43520">
+      <assemblyIdentity name="ShareX.HelpersLib.resources" version="12.3.0.0" language="zh-TW" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>HA0lcMgfgD3wRTlPt0FPVSH7oLkQOvd9Owk2sIQg5Uc=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ShareX.HistoryLib.dll" size="117760">
+      <assemblyIdentity name="ShareX.HistoryLib" version="12.3.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>C1th5mTBfZarAwDT1NiY/daTEdSh6ANcJMmDePwDm60=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ShareX.HistoryLib.resources.dll" size="9216">
+      <assemblyIdentity name="ShareX.HistoryLib.resources" version="12.3.0.0" language="de" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>RLs5HnfVTUamDlwi6/gepCGaouBYutKedDChQzH+daE=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="es\ShareX.HistoryLib.resources.dll" size="9216">
+      <assemblyIdentity name="ShareX.HistoryLib.resources" version="12.3.0.0" language="es" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>paotPBjHwxI1tjA2fBKypdEF+XcsCGkCISG6xRjQyyA=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="es-MX\ShareX.HistoryLib.resources.dll" size="10240">
+      <assemblyIdentity name="ShareX.HistoryLib.resources" version="12.3.0.0" language="es-MX" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>VaTRgnhZg7ngF11jc62lLJDZYzRjktF9WPyTxwDnsdE=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="fr\ShareX.HistoryLib.resources.dll" size="9216">
+      <assemblyIdentity name="ShareX.HistoryLib.resources" version="12.3.0.0" language="fr" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>nsiVMpd1sVTqWr9lntT+QqP7qCE6FlHi/tTrvqbCEUs=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="hu\ShareX.HistoryLib.resources.dll" size="9216">
+      <assemblyIdentity name="ShareX.HistoryLib.resources" version="12.3.0.0" language="hu" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>+c1MBiHN2Ncrfpp+QYMdWk28xyXW4VcoWxTNvUyz9tA=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="it-IT\ShareX.HistoryLib.resources.dll" size="9216">
+      <assemblyIdentity name="ShareX.HistoryLib.resources" version="12.3.0.0" language="it-IT" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>GdRynB8vqsN+9H7Ieheof28qN5kCVPK2tHm8KsyTjOs=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ko-KR\ShareX.HistoryLib.resources.dll" size="9728">
+      <assemblyIdentity name="ShareX.HistoryLib.resources" version="12.3.0.0" language="ko-KR" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>sQRVNjb9RJHbvPq5Roh2IZAy8kf4uUYdOaITdayHvNk=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="nl-NL\ShareX.HistoryLib.resources.dll" size="9216">
+      <assemblyIdentity name="ShareX.HistoryLib.resources" version="12.3.0.0" language="nl-NL" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>yVHZpUOBA8QvUZgLOkhlyT1mfNqM5lLaRXpGR5YdbRs=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="pt-BR\ShareX.HistoryLib.resources.dll" size="9216">
+      <assemblyIdentity name="ShareX.HistoryLib.resources" version="12.3.0.0" language="pt-BR" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>ekzglbsB97fGghtIDgHpRYvZGwmDGoonllGkUovW3D4=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ru\ShareX.HistoryLib.resources.dll" size="9728">
+      <assemblyIdentity name="ShareX.HistoryLib.resources" version="12.3.0.0" language="ru" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>nieoSVp7iX7/hG/GE4usoHWfPgoSyZgt1dL22waqP6E=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="tr\ShareX.HistoryLib.resources.dll" size="12288">
+      <assemblyIdentity name="ShareX.HistoryLib.resources" version="12.3.0.0" language="tr" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>K4nammt99R+6lj0Fo6wTwsWo9WNa9lHtVTPahsoJY+Y=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="uk\ShareX.HistoryLib.resources.dll" size="9216">
+      <assemblyIdentity name="ShareX.HistoryLib.resources" version="12.3.0.0" language="uk" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>l/aMKE74eZ8ixSaWYYe5XMVmh+LCHS1VAO/o3OG539E=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="vi-VN\ShareX.HistoryLib.resources.dll" size="9216">
+      <assemblyIdentity name="ShareX.HistoryLib.resources" version="12.3.0.0" language="vi-VN" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>EfOA7IKVfYVM/tI28TSz5toNaaF0quoyWyHDyfxESOM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="zh-CN\ShareX.HistoryLib.resources.dll" size="9728">
+      <assemblyIdentity name="ShareX.HistoryLib.resources" version="12.3.0.0" language="zh-CN" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>T3IB0gP1GSef8t08c2c0dAuHTRNcKhnHUPhmIpUm+WY=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="zh-TW\ShareX.HistoryLib.resources.dll" size="9216">
+      <assemblyIdentity name="ShareX.HistoryLib.resources" version="12.3.0.0" language="zh-TW" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>O25fSGF8Iq9zMaEwfty5eSv2slZuoD74W/AhbE8Abl4=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ShareX.ImageEffectsLib.dll" size="92160">
+      <assemblyIdentity name="ShareX.ImageEffectsLib" version="12.3.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>Fzl16LXb1d596Nou/eQOz/m13C0CrWfu5MMif7tNvnc=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ShareX.ImageEffectsLib.resources.dll" size="5120">
+      <assemblyIdentity name="ShareX.ImageEffectsLib.resources" version="12.3.0.0" language="de" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>IcsShfSCkTdmBoSoRfOUFFrJtBCAa/46fj7esNbqTqg=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="es\ShareX.ImageEffectsLib.resources.dll" size="5120">
+      <assemblyIdentity name="ShareX.ImageEffectsLib.resources" version="12.3.0.0" language="es" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>5OAGYQ24zl7ew4eDXYbTdrJP3IF8S/slLR3ZL3BEK9U=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="es-MX\ShareX.ImageEffectsLib.resources.dll" size="5632">
+      <assemblyIdentity name="ShareX.ImageEffectsLib.resources" version="12.3.0.0" language="es-MX" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>c3nElTVkvwF+ADtgAb/oJAb9eCh/NDmEE0Ldvda7iw4=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="fr\ShareX.ImageEffectsLib.resources.dll" size="5120">
+      <assemblyIdentity name="ShareX.ImageEffectsLib.resources" version="12.3.0.0" language="fr" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>Pi82AFasQ/UrgJleTy5VLPgbqP59Wnk9jKsjmnPnKoE=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="hu\ShareX.ImageEffectsLib.resources.dll" size="5120">
+      <assemblyIdentity name="ShareX.ImageEffectsLib.resources" version="12.3.0.0" language="hu" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>A9E+icrbHc00ZYuj5t0IF0SfY9/hIDTfr+02baUlbvI=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="id-ID\ShareX.ImageEffectsLib.resources.dll" size="5632">
+      <assemblyIdentity name="ShareX.ImageEffectsLib.resources" version="12.3.0.0" language="id-ID" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>szsZ7TOLSRT/44r8Rp5B29AP+pB4/SmfZzXPXWb9hEA=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="it-IT\ShareX.ImageEffectsLib.resources.dll" size="5120">
+      <assemblyIdentity name="ShareX.ImageEffectsLib.resources" version="12.3.0.0" language="it-IT" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>y7IJEZJNpfeIY1GyB0Z9qa7x8ew/NY+efkl3il02laY=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ko-KR\ShareX.ImageEffectsLib.resources.dll" size="5632">
+      <assemblyIdentity name="ShareX.ImageEffectsLib.resources" version="12.3.0.0" language="ko-KR" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>4GxWaRJRH5uzMCipQRsf6B6t11Eu57D6I1Q8caixMmg=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="nl-NL\ShareX.ImageEffectsLib.resources.dll" size="5120">
+      <assemblyIdentity name="ShareX.ImageEffectsLib.resources" version="12.3.0.0" language="nl-NL" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>4TRgmm3H/uGCfdFp6uxqEISEySFsDrgjrUSGg3VEVuM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="pt-BR\ShareX.ImageEffectsLib.resources.dll" size="5120">
+      <assemblyIdentity name="ShareX.ImageEffectsLib.resources" version="12.3.0.0" language="pt-BR" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>o1biDMSD5JKRGiWA22wRw67UryXH7p4QD3K0xPnx6PE=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ru\ShareX.ImageEffectsLib.resources.dll" size="5632">
+      <assemblyIdentity name="ShareX.ImageEffectsLib.resources" version="12.3.0.0" language="ru" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>5I1v+3ZSto2Jb0/JM28E22xYtrSTplr7XpweYo0kZh4=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="tr\ShareX.ImageEffectsLib.resources.dll" size="5120">
+      <assemblyIdentity name="ShareX.ImageEffectsLib.resources" version="12.3.0.0" language="tr" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>P61UCUljuODaAprwgA/N1Wq2HyPwT7Cg7bfLxASgsJ4=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="uk\ShareX.ImageEffectsLib.resources.dll" size="4608">
+      <assemblyIdentity name="ShareX.ImageEffectsLib.resources" version="12.3.0.0" language="uk" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>sffofcsSaRaF3jGuAXkdYZGKD+WzywmwFmzmBTZnFIM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="vi-VN\ShareX.ImageEffectsLib.resources.dll" size="5120">
+      <assemblyIdentity name="ShareX.ImageEffectsLib.resources" version="12.3.0.0" language="vi-VN" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>onswZwsO76lgdJGLwrN2DwzUNThda+Z+SgwWrkYPEEg=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="zh-CN\ShareX.ImageEffectsLib.resources.dll" size="5632">
+      <assemblyIdentity name="ShareX.ImageEffectsLib.resources" version="12.3.0.0" language="zh-CN" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>Ke5Gp3oHVMvNAFJac9ifW3tU4u9/NQxo2N1a5j9gZJw=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="zh-TW\ShareX.ImageEffectsLib.resources.dll" size="5120">
+      <assemblyIdentity name="ShareX.ImageEffectsLib.resources" version="12.3.0.0" language="zh-TW" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>Ls15+WAOQ74F4ewot1ISeQ4sgzigTA+MB4XbS7fn42o=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ShareX.IndexerLib.dll" size="42496">
+      <assemblyIdentity name="ShareX.IndexerLib" version="12.3.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>S+a0GJTUBH2IfZ1g6FLEMwQ4XXM9ChPDDAKQhyUF1yM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ShareX.IndexerLib.resources.dll" size="4096">
+      <assemblyIdentity name="ShareX.IndexerLib.resources" version="12.3.0.0" language="es-MX" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>qLeXhzjHPsxNyiLEB0lpNLDYAzJFg1PT2Ai6BJZMRUw=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ko-KR\ShareX.IndexerLib.resources.dll" size="4096">
+      <assemblyIdentity name="ShareX.IndexerLib.resources" version="12.3.0.0" language="ko-KR" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>o6zsjCFlVUX73Vx7XoIdha6YU2gxDrO9Mq2i2sXytuE=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ru\ShareX.IndexerLib.resources.dll" size="4096">
+      <assemblyIdentity name="ShareX.IndexerLib.resources" version="12.3.0.0" language="ru" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>JOwkM4ZEEZfLLU+5rrPRf9DB3t1ylhVQ0+oCf10jITQ=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="tr\ShareX.IndexerLib.resources.dll" size="3584">
+      <assemblyIdentity name="ShareX.IndexerLib.resources" version="12.3.0.0" language="tr" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>GLSe1fFuNWiQmOj88mJ7vJilCewTBSINJkfRG7DOZUM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ShareX.MediaLib.dll" size="70656">
+      <assemblyIdentity name="ShareX.MediaLib" version="12.3.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>0rSWyb66QYMy2/fmPoqhOEGdwd9ryo1lEfb04dp29D8=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ShareX.MediaLib.resources.dll" size="5120">
+      <assemblyIdentity name="ShareX.MediaLib.resources" version="12.3.0.0" language="de" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>ie3z1k2KL03/m6qyhl5XaG7CzKbNUQ7yRR2XBqPhpJ8=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="es-MX\ShareX.MediaLib.resources.dll" size="5632">
+      <assemblyIdentity name="ShareX.MediaLib.resources" version="12.3.0.0" language="es-MX" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>SGUJZbN6SlzMdDr6ygUxKoxwoQC4rLvxco/G79dqoGw=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="fr\ShareX.MediaLib.resources.dll" size="5632">
+      <assemblyIdentity name="ShareX.MediaLib.resources" version="12.3.0.0" language="fr" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>XYhZh2it0yBN/QXOYtkMTNPWXOeRuFK5BSLG8nbRDrk=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="id-ID\ShareX.MediaLib.resources.dll" size="5632">
+      <assemblyIdentity name="ShareX.MediaLib.resources" version="12.3.0.0" language="id-ID" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>LLxFICAHm/kLEmFQzrfPprIh7KH/xb00UTrXU8rBx6s=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="it-IT\ShareX.MediaLib.resources.dll" size="5120">
+      <assemblyIdentity name="ShareX.MediaLib.resources" version="12.3.0.0" language="it-IT" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>olcyYR/y5X01B0LMW6nUMFZjhYhJuLtzy2L65Ii6TGo=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ko-KR\ShareX.MediaLib.resources.dll" size="5632">
+      <assemblyIdentity name="ShareX.MediaLib.resources" version="12.3.0.0" language="ko-KR" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>vt2A7sVVc8f344QFoumflDqs9XCqb/iQpxCMgMNi1Kw=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="nl-NL\ShareX.MediaLib.resources.dll" size="5120">
+      <assemblyIdentity name="ShareX.MediaLib.resources" version="12.3.0.0" language="nl-NL" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>E/ij1ayxRjtt0BrXF8jLdxv3rObpdVVzCbR6cwRu9iM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="pt-BR\ShareX.MediaLib.resources.dll" size="5120">
+      <assemblyIdentity name="ShareX.MediaLib.resources" version="12.3.0.0" language="pt-BR" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>tA1dlDQESJFC+zKMd/lCIvk0g4xKI38GDwvJhpxbkLc=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ru\ShareX.MediaLib.resources.dll" size="6144">
+      <assemblyIdentity name="ShareX.MediaLib.resources" version="12.3.0.0" language="ru" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>zkK5x8T5TnqQ4c5Tlb4yQFxEuwOpXJV8e9qG6p4cQbw=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="tr\ShareX.MediaLib.resources.dll" size="5120">
+      <assemblyIdentity name="ShareX.MediaLib.resources" version="12.3.0.0" language="tr" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>PTyQ2f4n4MRq12tXmGJLba0I0WAIcZE+jr15eEmutzU=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="uk\ShareX.MediaLib.resources.dll" size="5120">
+      <assemblyIdentity name="ShareX.MediaLib.resources" version="12.3.0.0" language="uk" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>3Dpi2jvwgcp9VXt5Q2Z8fIbz1s3V414+RD6djHp8NEg=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="vi-VN\ShareX.MediaLib.resources.dll" size="5120">
+      <assemblyIdentity name="ShareX.MediaLib.resources" version="12.3.0.0" language="vi-VN" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>gIFSkRqnw/AcPGzG5zD7W7yM+gEKj2+rjzz3D46SI0g=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="zh-CN\ShareX.MediaLib.resources.dll" size="5632">
+      <assemblyIdentity name="ShareX.MediaLib.resources" version="12.3.0.0" language="zh-CN" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>gc4h8JNUFf3xptRBMBA5XSBcjINVjPZzjojJOvXY3tI=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="zh-TW\ShareX.MediaLib.resources.dll" size="4608">
+      <assemblyIdentity name="ShareX.MediaLib.resources" version="12.3.0.0" language="zh-TW" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>EqhcdNw4m10bTm9z+mk0huq0XNweTywYQ/FXsPG8+5c=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="de\ShareX.resources.dll" size="63488">
+      <assemblyIdentity name="ShareX.resources" version="12.3.0.0" language="de" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>h0t07eT4rEqYO5OJidkKiaDxMex9hc010V2MP60COos=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="es\ShareX.resources.dll" size="49664">
+      <assemblyIdentity name="ShareX.resources" version="12.3.0.0" language="es" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>bhK+RKVBAmVvT2vlJxmKnkXmZEZIo32eCWizeCFlPI4=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="es-MX\ShareX.resources.dll" size="76800">
+      <assemblyIdentity name="ShareX.resources" version="12.3.0.0" language="es-MX" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>yxYNRkXhRsPQy9QEAQi8Kk/OpVLG8lRWHcuwNZI5FAw=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="fr\ShareX.resources.dll" size="74752">
+      <assemblyIdentity name="ShareX.resources" version="12.3.0.0" language="fr" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>JyB7ulh3qvqgEY//RXZFnFeXE5WPczD5pzsEalm9VPc=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="hu\ShareX.resources.dll" size="49152">
+      <assemblyIdentity name="ShareX.resources" version="12.3.0.0" language="hu" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>BrtHxc7rNCI+ByjNMTD6bdrnwTaRdCtVRVL5tvviPIQ=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="id-ID\ShareX.resources.dll" size="72704">
+      <assemblyIdentity name="ShareX.resources" version="12.3.0.0" language="id-ID" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>TzuwfFxVYO/FKY1yt+ySEqAeLHUSpGZYQmOt84vIM7M=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="it-IT\ShareX.resources.dll" size="72704">
+      <assemblyIdentity name="ShareX.resources" version="12.3.0.0" language="it-IT" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>9rOQno/muH9aTXMfMLidpjkfQvtRLTCxbNHSNeHiMKM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ko-KR\ShareX.resources.dll" size="75264">
+      <assemblyIdentity name="ShareX.resources" version="12.3.0.0" language="ko-KR" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>mkHzmhGjNdsV5t3eQ1MBQ0KdZa+PP94Ke/yr2R72FwE=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="nl-NL\ShareX.resources.dll" size="61952">
+      <assemblyIdentity name="ShareX.resources" version="12.3.0.0" language="nl-NL" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>Vadw/Me85SnXWzvSaH1SwchObo2BXIHU6IT0BHtjf0U=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="pt-BR\ShareX.resources.dll" size="64512">
+      <assemblyIdentity name="ShareX.resources" version="12.3.0.0" language="pt-BR" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>b1geoJkBx+I6oa8yJUh8B5qVJDsYiMCyIdvZyYpF04A=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ru\ShareX.resources.dll" size="86016">
+      <assemblyIdentity name="ShareX.resources" version="12.3.0.0" language="ru" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>4th8HwqD8aMCD2gClxRvNBWsbKsBXF07HjqcGyI0t8A=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="tr\ShareX.resources.dll" size="73216">
+      <assemblyIdentity name="ShareX.resources" version="12.3.0.0" language="tr" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>BvkkiyWNgGBo9ySb2bI7n2jKAfluvC1FYHD6vz/+8Uk=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="uk\ShareX.resources.dll" size="70144">
+      <assemblyIdentity name="ShareX.resources" version="12.3.0.0" language="uk" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>iHPcXitjHkkaiskc3aVfqsN7a2UP6UMpoGvIoG/xXpI=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="vi-VN\ShareX.resources.dll" size="56320">
+      <assemblyIdentity name="ShareX.resources" version="12.3.0.0" language="vi-VN" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>OxQ/rGp1d1jeoU3aaVZfIMBPcTmkm9vFVQ7Hddl13x0=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="zh-CN\ShareX.resources.dll" size="72192">
+      <assemblyIdentity name="ShareX.resources" version="12.3.0.0" language="zh-CN" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>5arGhrL0zo3mrXcpR5CbiPcAKdx+TgnZvJFnR/QdUXs=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="zh-TW\ShareX.resources.dll" size="63488">
+      <assemblyIdentity name="ShareX.resources" version="12.3.0.0" language="zh-TW" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>ICVrf4x6dEXXp2pibRIEkuzVrvRY3MGwVtE1w3bK1aE=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ShareX.ScreenCaptureLib.dll" size="676864">
+      <assemblyIdentity name="ShareX.ScreenCaptureLib" version="12.3.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>E6JSOENbTkellfh4s6rSd1xEEHvEO9KBCUVaZPYzyJk=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ShareX.ScreenCaptureLib.resources.dll" size="18944">
+      <assemblyIdentity name="ShareX.ScreenCaptureLib.resources" version="12.3.0.0" language="de" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>3CDr7y/qqvyRLPBuGLB4GUYQ0Mx5gRU8+0FvC7I+upA=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="es\ShareX.ScreenCaptureLib.resources.dll" size="7680">
+      <assemblyIdentity name="ShareX.ScreenCaptureLib.resources" version="12.3.0.0" language="es" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>USnk7D7H1SnXs8bHXgE0RA0RGHXPVIUfuG3c1idl1+8=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="es-MX\ShareX.ScreenCaptureLib.resources.dll" size="29184">
+      <assemblyIdentity name="ShareX.ScreenCaptureLib.resources" version="12.3.0.0" language="es-MX" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>6x/zxKNAUCVwvEttoFP/HZEqkYEH/ERmgTZJ+GHhY6M=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="fr\ShareX.ScreenCaptureLib.resources.dll" size="20992">
+      <assemblyIdentity name="ShareX.ScreenCaptureLib.resources" version="12.3.0.0" language="fr" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>h3WwWNREnSyMvW+niqKhk5yRWyCt5fXETBx2UzXehzA=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="hu\ShareX.ScreenCaptureLib.resources.dll" size="7168">
+      <assemblyIdentity name="ShareX.ScreenCaptureLib.resources" version="12.3.0.0" language="hu" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>uA5s0zlRAhJxCzslX+Ss8M8cLQyQA2ZmEnvM6M6Z8Vo=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="id-ID\ShareX.ScreenCaptureLib.resources.dll" size="26624">
+      <assemblyIdentity name="ShareX.ScreenCaptureLib.resources" version="12.3.0.0" language="id-ID" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>K7oR/QOQJCna98hyh2GgcaxDxJxwyYynbrdLSy7s3+g=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="it-IT\ShareX.ScreenCaptureLib.resources.dll" size="20480">
+      <assemblyIdentity name="ShareX.ScreenCaptureLib.resources" version="12.3.0.0" language="it-IT" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>jAZnkJZptWSupqhwGrc2zm7DakSOQ0iho89a4tlQTpM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ko-KR\ShareX.ScreenCaptureLib.resources.dll" size="29184">
+      <assemblyIdentity name="ShareX.ScreenCaptureLib.resources" version="12.3.0.0" language="ko-KR" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>olZeeiEJNsZPbrFnI8cH3SqQhE8QOPQ/+rm/WZIY0FA=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="nl-NL\ShareX.ScreenCaptureLib.resources.dll" size="16896">
+      <assemblyIdentity name="ShareX.ScreenCaptureLib.resources" version="12.3.0.0" language="nl-NL" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>1P+vtnUlNoXJ8hR+TcH5tO1S+qtuJwCG8z/o1SPudlg=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="pt-BR\ShareX.ScreenCaptureLib.resources.dll" size="17920">
+      <assemblyIdentity name="ShareX.ScreenCaptureLib.resources" version="12.3.0.0" language="pt-BR" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>MlqROQThQ+Z16B2rchUknp6FMKrfu6QeEWotppATTos=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ru\ShareX.ScreenCaptureLib.resources.dll" size="34304">
+      <assemblyIdentity name="ShareX.ScreenCaptureLib.resources" version="12.3.0.0" language="ru" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>aYn2LabytolY4V6MWJehgM7CTh0uS/q28vPncxM0Dbk=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="tr\ShareX.ScreenCaptureLib.resources.dll" size="13824">
+      <assemblyIdentity name="ShareX.ScreenCaptureLib.resources" version="12.3.0.0" language="tr" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>Qvkmso70j2pRxNSVpI71IPPaz+MHz422CU14RPTdIQs=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="uk\ShareX.ScreenCaptureLib.resources.dll" size="9216">
+      <assemblyIdentity name="ShareX.ScreenCaptureLib.resources" version="12.3.0.0" language="uk" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>IZmorYHgM5LP8YVtfBthaaBmOOe+hYOBq1RIuU+KeHk=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="vi-VN\ShareX.ScreenCaptureLib.resources.dll" size="14336">
+      <assemblyIdentity name="ShareX.ScreenCaptureLib.resources" version="12.3.0.0" language="vi-VN" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>g2kSWvG5QCewbr3LfmsKOS/2tbVi3IYabX0HbSukEsM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="zh-CN\ShareX.ScreenCaptureLib.resources.dll" size="28672">
+      <assemblyIdentity name="ShareX.ScreenCaptureLib.resources" version="12.3.0.0" language="zh-CN" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>wCvFminF5s1f9rwtf0fbqYXi0JWka92yw+/L7zGYQpc=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="zh-TW\ShareX.ScreenCaptureLib.resources.dll" size="16384">
+      <assemblyIdentity name="ShareX.ScreenCaptureLib.resources" version="12.3.0.0" language="zh-TW" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>OHvmFGG9HMy+gPWwxk2h+t0d2SlVzmQQsNW8HTRuoeQ=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ShareX.UploadersLib.dll" size="1965056">
+      <assemblyIdentity name="ShareX.UploadersLib" version="12.3.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>PIZ6Bj+0KzgzbTYMdTRjogQ81o9+izvb30d2+YlysY0=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ShareX.UploadersLib.resources.dll" size="32768">
+      <assemblyIdentity name="ShareX.UploadersLib.resources" version="12.3.0.0" language="de" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>/psONdYANQYtEoHW//Fv98mCaiYzFy0XCqukE/ziBcE=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="es\ShareX.UploadersLib.resources.dll" size="26624">
+      <assemblyIdentity name="ShareX.UploadersLib.resources" version="12.3.0.0" language="es" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>40nJobiwTf6+jV6glFYMZkyAJrW6X6Yja/y0GGLxk74=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="es-MX\ShareX.UploadersLib.resources.dll" size="51712">
+      <assemblyIdentity name="ShareX.UploadersLib.resources" version="12.3.0.0" language="es-MX" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>S7yFiFrb3TK1O7miPQkqAP9S00WWWjZ8gHRlACWp7kM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="fr\ShareX.UploadersLib.resources.dll" size="42496">
+      <assemblyIdentity name="ShareX.UploadersLib.resources" version="12.3.0.0" language="fr" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>9TScrxyNEpLELi93zrchKsfY2/Kc5b9/rQE0L+S70eA=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="hu\ShareX.UploadersLib.resources.dll" size="26112">
+      <assemblyIdentity name="ShareX.UploadersLib.resources" version="12.3.0.0" language="hu" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>D0eNoEdoMOt20++tKXMfUwo/ah/Bwxh0M+p+cSIVEco=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="id-ID\ShareX.UploadersLib.resources.dll" size="48640">
+      <assemblyIdentity name="ShareX.UploadersLib.resources" version="12.3.0.0" language="id-ID" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>l5ebLbjszL6Q7n9CiwTMrxQ/JUG+IKZy3f3oMAbgh38=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="it-IT\ShareX.UploadersLib.resources.dll" size="43520">
+      <assemblyIdentity name="ShareX.UploadersLib.resources" version="12.3.0.0" language="it-IT" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>fRfga5igNI+91eLt6vMcKShFgZsPZ/7DUAihmd0eXbU=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ko-KR\ShareX.UploadersLib.resources.dll" size="50688">
+      <assemblyIdentity name="ShareX.UploadersLib.resources" version="12.3.0.0" language="ko-KR" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>rOJQpOXayL/OMdidxfXWg45mfIVxL+72D9gSK6gUs+8=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="nl-NL\ShareX.UploadersLib.resources.dll" size="32768">
+      <assemblyIdentity name="ShareX.UploadersLib.resources" version="12.3.0.0" language="nl-NL" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>d5AM4mK882N2BbQ5Hz9kpkbKGgv0qg358a79XbD4AMM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="pt-BR\ShareX.UploadersLib.resources.dll" size="44032">
+      <assemblyIdentity name="ShareX.UploadersLib.resources" version="12.3.0.0" language="pt-BR" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>rwLw1QoQtIBm5e8iV/yZlBolwhTAv7G/aNYydA5A5OE=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ru\ShareX.UploadersLib.resources.dll" size="51712">
+      <assemblyIdentity name="ShareX.UploadersLib.resources" version="12.3.0.0" language="ru" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>HisESX8m6zy8GXCqktjmr4jUKUrvW2QvySt4jZDSIQk=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="tr\ShareX.UploadersLib.resources.dll" size="33792">
+      <assemblyIdentity name="ShareX.UploadersLib.resources" version="12.3.0.0" language="tr" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>16pKMm2xC5Lc8FH5oshFKor+foLm3bKtm2N1UsBdXCU=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="uk\ShareX.UploadersLib.resources.dll" size="30720">
+      <assemblyIdentity name="ShareX.UploadersLib.resources" version="12.3.0.0" language="uk" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>3TLvq9e2QVMkAlKzYOC2XkHlJY7gLticb8LTDfvD35w=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="vi-VN\ShareX.UploadersLib.resources.dll" size="29184">
+      <assemblyIdentity name="ShareX.UploadersLib.resources" version="12.3.0.0" language="vi-VN" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>RLCR698FbK/yvl85w1vxwfdlvLzrQJK/+Eht3Go6XPs=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="zh-CN\ShareX.UploadersLib.resources.dll" size="49152">
+      <assemblyIdentity name="ShareX.UploadersLib.resources" version="12.3.0.0" language="zh-CN" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>wXrngbNQvj+JhNry354tUKjFHQXMS1YO/mHxoKmm+Mc=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="zh-TW\ShareX.UploadersLib.resources.dll" size="35328">
+      <assemblyIdentity name="ShareX.UploadersLib.resources" version="12.3.0.0" language="zh-TW" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>Ua6cxhGBNoKuzqVz8/lXeE+XZmUWXN8dKI/db8kLkOE=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="zxing.dll" size="441344">
+      <assemblyIdentity name="zxing" version="0.16.4.0" publicKeyToken="4E88037AC681FE60" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>kHsEOkGZvlwDNQ72XOM2ScGt2Obeh4Dzqgwd5M1jKuA=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="zxing.presentation.dll" size="19456">
+      <assemblyIdentity name="zxing.presentation" version="0.16.4.0" publicKeyToken="4E88037AC681FE60" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>5pTkIgMWO64PdRyle+W7t0V0O0obvp92K4wSockN7ZE=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="ShareX.exe.config" size="849">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>W8gbeGNOphyegBXR6EttdnwgHnbVTQ626mOOeiRQXUA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="ShareX_Icon.ico" size="41684">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>fA7fLpDz26ycdqRxnfGh9UOiow1M/j3Dfrg2ccrmguk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <asmv3:application xmlns="urn:schemas-microsoft-com:asm.v1">
+    <asmv3:windowsSettings>
+      <dpiAware xmlns="http://schemas.microsoft.com/SMI/2005/WindowsSettings">True/PM</dpiAware>
+      <dpiAwareness xmlns="http://schemas.microsoft.com/SMI/2016/WindowsSettings">PerMonitorV2, PerMonitor</dpiAwareness>
+    </asmv3:windowsSettings>
+  </asmv3:application>
+  <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
+    <application>
+      <!-- Windows Vista -->
+      <supportedOS Id="{e2011457-1546-43c5-a5fe-008deee3d3f0}" />
+      <!-- Windows 7 -->
+      <supportedOS Id="{35138b9a-5d96-4fbd-8e2d-a2440225f93a}" />
+      <!-- Windows 8 -->
+      <supportedOS Id="{4a2f28e3-53b9-4441-ba9c-d69d4a4a6e38}" />
+      <!-- Windows 8.1 -->
+      <supportedOS Id="{1f676c76-80e1-4239-95bb-83d0f6d0da78}" />
+      <!-- Windows 10 -->
+      <supportedOS Id="{8e0f7a12-bfb3-4fe8-b9a5-48fd50a15a9a}" />
+    </application>
+  </compatibility>
+<publisherIdentity name="CN=jojo-PC\jojo" issuerKeyHash="388774b82201126cd95af9d8282aff0742d4008e" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>MiqsB540FKdMUOU/3eeMkZBZjAWm7d7VQJJVa0VYz/4=</DigestValue></Reference></SignedInfo><SignatureValue>EnJmJBGgv6DKbXmB/JoMvb1qDJbO6xDaTZBx9jnWNnOXLbsXnNEAxlT6djQwmWd9K3DIFCCPVDvtSOdFQ/zLbjtx7GXB/zkZU2/7Ayjg2MU0CclbgllpBK+09UUU6OiV9kXCVN/b75Aln0k6d26uaJ0WHE7b95wauNSFb0L452A=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>yTRHLj2dPdTe23cumY+bG4lxXvNJfYJ+Gi9B9VcdDhWqAxF4HdttzvR/b7CA2X5uGnwD3L24ezVOv4Mn0AzUcWvyZwJ5/xqsgMAhSfQKmmd04AOrziJDIAgtiAYQ3wsME3+yRasWSQ1DVLyaBa2PEyvs71mLzlozAMA4/i1uaQE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="fecf58456b559240d5deeda6058c5990918ce7dd3fe5504ca714349e07ac2a32" Description="" Url=""><as:assemblyIdentity name="ShareX.exe" version="1.0.0.0" publicKeyToken="63ac841fbbab0fa7" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=jojo-PC\jojo</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>2cJ+1vz6E0dpl0B1ul7lZknmzgWA/Tvm/oOhexQqeUQ=</DigestValue></Reference></SignedInfo><SignatureValue>RejHBdw9eSLmylE2GMkEu4ySuhpcOBWIz6i/Td56MohB4QiCje1XGKqZlfTsIg477n/xh6umPF8zTF76Zev2JYl4kXqZbJ31KOJirJOu3zSBSWGraPnFUGJkNV1Vm4pA/sFSwrZfLKmekulBZspA3uA82dtB6GI2HZbTWJA96Ww=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>yTRHLj2dPdTe23cumY+bG4lxXvNJfYJ+Gi9B9VcdDhWqAxF4HdttzvR/b7CA2X5uGnwD3L24ezVOv4Mn0AzUcWvyZwJ5/xqsgMAhSfQKmmd04AOrziJDIAgtiAYQ3wsME3+yRasWSQ1DVLyaBa2PEyvs71mLzlozAMA4/i1uaQE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIByTCCATKgAwIBAgIQH4Ibf4TmqLJIolqdNqPY8zANBgkqhkiG9w0BAQsFADAjMSEwHwYDVQQDHhgAagBvAGoAbwAtAFAAQwBcAGoAbwBqAG8wHhcNMTgwODE4MTEzODQ4WhcNMTkwODE4MTczODQ4WjAjMSEwHwYDVQQDHhgAagBvAGoAbwAtAFAAQwBcAGoAbwBqAG8wgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAMk0Ry49nT3U3tt3LpmPmxuJcV7zSX2CfhovQfVXHQ4VqgMReB3bbc70f2+wgNl+bhp8A9y9uHs1Tr+DJ9AM1HFr8mcCef8arIDAIUn0CppndOADq84iQyAILYgGEN8LDBN/skWrFkkNQ1S8mgWtjxMr7O9Zi85aMwDAOP4tbmkBAgMBAAEwDQYJKoZIhvcNAQELBQADgYEAxEjEocpwbpyfpS7ftoptvels1ffFo7Phn3jYmfKsw8UeEJ6cpkrYKzWLkXvO9BRRTIh1a1gwhx/OcFZCd9nLLasDI8p5V2AZ5nW+XOLN/oNz9HX/ODeUYJnBssOeDic10pztucrbxEMvGA3YZVGnpliUKhkJvKH6u5pesTRNOeQ=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
