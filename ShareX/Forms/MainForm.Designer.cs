@@ -194,6 +194,8 @@
             this.tsmiTrayWebpageCapture = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiTrayTextCapture = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiTrayAutoCapture = new System.Windows.Forms.ToolStripMenuItem();
+            this.tssTrayCapture1 = new System.Windows.Forms.ToolStripSeparator();
+            this.tsmiTrayShowCursor = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiTrayUpload = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiTrayUploadFile = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiTrayUploadFolder = new System.Windows.Forms.ToolStripMenuItem();
@@ -256,13 +258,14 @@
             this.ttMain = new System.Windows.Forms.ToolTip(this.components);
             this.pbDiscordOpen = new System.Windows.Forms.PictureBox();
             this.pbDiscordHide = new System.Windows.Forms.PictureBox();
-            this.ucNews = new ShareX.NewsListControl();
             this.pNews = new System.Windows.Forms.Panel();
             this.btnCloseNews = new System.Windows.Forms.Button();
             this.flpCommunity = new System.Windows.Forms.FlowLayoutPanel();
             this.flpDiscord = new System.Windows.Forms.FlowLayoutPanel();
-            this.tssTrayCapture1 = new System.Windows.Forms.ToolStripSeparator();
-            this.tsmiTrayShowCursor = new System.Windows.Forms.ToolStripMenuItem();
+            this.button1 = new System.Windows.Forms.Button();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.ucNews = new ShareX.NewsListControl();
             ((System.ComponentModel.ISupportInitialize)(this.scMain)).BeginInit();
             this.scMain.Panel1.SuspendLayout();
             this.scMain.Panel2.SuspendLayout();
@@ -278,6 +281,7 @@
             this.pNews.SuspendLayout();
             this.flpCommunity.SuspendLayout();
             this.flpDiscord.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // scMain
@@ -289,11 +293,15 @@
             // scMain.Panel1
             // 
             this.scMain.Panel1.Controls.Add(this.lblMainFormTip);
+            this.scMain.Panel1.Controls.Add(this.pictureBox1);
+            this.scMain.Panel1.Controls.Add(this.button1);
             this.scMain.Panel1.Controls.Add(this.lvUploads);
             // 
             // scMain.Panel2
             // 
             this.scMain.Panel2.Controls.Add(this.pbPreview);
+            this.scMain.Panel2.Controls.Add(this.menuStrip1);
+            this.scMain.Panel2.Controls.Add(this.tsMain);
             this.scMain.SplitterMoved += new System.Windows.Forms.SplitterEventHandler(this.scMain_SplitterMoved);
             // 
             // lblMainFormTip
@@ -307,6 +315,7 @@
             // 
             // lvUploads
             // 
+            resources.ApplyResources(this.lvUploads, "lvUploads");
             this.lvUploads.AutoFillColumn = true;
             this.lvUploads.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.lvUploads.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
@@ -317,7 +326,6 @@
             this.chElapsed,
             this.chRemaining,
             this.chURL});
-            resources.ApplyResources(this.lvUploads, "lvUploads");
             this.lvUploads.FullRowSelect = true;
             this.lvUploads.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
             this.lvUploads.HideSelection = false;
@@ -1569,6 +1577,19 @@
             resources.ApplyResources(this.tsmiTrayAutoCapture, "tsmiTrayAutoCapture");
             this.tsmiTrayAutoCapture.Click += new System.EventHandler(this.tsmiAutoCapture_Click);
             // 
+            // tssTrayCapture1
+            // 
+            this.tssTrayCapture1.Name = "tssTrayCapture1";
+            resources.ApplyResources(this.tssTrayCapture1, "tssTrayCapture1");
+            // 
+            // tsmiTrayShowCursor
+            // 
+            this.tsmiTrayShowCursor.CheckOnClick = true;
+            this.tsmiTrayShowCursor.Image = global::ShareX.Properties.Resources.cursor;
+            this.tsmiTrayShowCursor.Name = "tsmiTrayShowCursor";
+            resources.ApplyResources(this.tsmiTrayShowCursor, "tsmiTrayShowCursor");
+            this.tsmiTrayShowCursor.Click += new System.EventHandler(this.tsmiShowCursor_Click);
+            // 
             // tsmiTrayUpload
             // 
             this.tsmiTrayUpload.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -2025,16 +2046,11 @@
             this.ttMain.SetToolTip(this.pbDiscordHide, resources.GetString("pbDiscordHide.ToolTip"));
             this.pbDiscordHide.Click += new System.EventHandler(this.pbDiscordHide_Click);
             // 
-            // ucNews
-            // 
-            resources.ApplyResources(this.ucNews, "ucNews");
-            this.ucNews.Name = "ucNews";
-            // 
             // pNews
             // 
+            resources.ApplyResources(this.pNews, "pNews");
             this.pNews.Controls.Add(this.btnCloseNews);
             this.pNews.Controls.Add(this.ucNews);
-            resources.ApplyResources(this.pNews, "pNews");
             this.pNews.Name = "pNews";
             // 
             // btnCloseNews
@@ -2059,18 +2075,29 @@
             this.flpDiscord.Controls.Add(this.pbDiscordHide);
             this.flpDiscord.Name = "flpDiscord";
             // 
-            // tssTrayCapture1
+            // button1
             // 
-            this.tssTrayCapture1.Name = "tssTrayCapture1";
-            resources.ApplyResources(this.tssTrayCapture1, "tssTrayCapture1");
+            resources.ApplyResources(this.button1, "button1");
+            this.button1.Name = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // tsmiTrayShowCursor
+            // menuStrip1
             // 
-            this.tsmiTrayShowCursor.CheckOnClick = true;
-            this.tsmiTrayShowCursor.Image = global::ShareX.Properties.Resources.cursor;
-            this.tsmiTrayShowCursor.Name = "tsmiTrayShowCursor";
-            resources.ApplyResources(this.tsmiTrayShowCursor, "tsmiTrayShowCursor");
-            this.tsmiTrayShowCursor.Click += new System.EventHandler(this.tsmiShowCursor_Click);
+            resources.ApplyResources(this.menuStrip1, "menuStrip1");
+            this.menuStrip1.Name = "menuStrip1";
+            // 
+            // pictureBox1
+            // 
+            resources.ApplyResources(this.pictureBox1, "pictureBox1");
+            this.pictureBox1.BackgroundImage = global::ShareX.Properties.Resources.ui_menu_blue;
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.TabStop = false;
+            // 
+            // ucNews
+            // 
+            resources.ApplyResources(this.ucNews, "ucNews");
+            this.ucNews.Name = "ucNews";
             // 
             // MainForm
             // 
@@ -2078,11 +2105,11 @@
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
+            this.Controls.Add(this.scMain);
             this.Controls.Add(this.pNews);
             this.Controls.Add(this.flpCommunity);
-            this.Controls.Add(this.scMain);
-            this.Controls.Add(this.tsMain);
             this.DoubleBuffered = true;
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "MainForm";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MainForm_FormClosed);
@@ -2095,6 +2122,7 @@
             this.Resize += new System.EventHandler(this.MainForm_Resize);
             this.scMain.Panel1.ResumeLayout(false);
             this.scMain.Panel2.ResumeLayout(false);
+            this.scMain.Panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.scMain)).EndInit();
             this.scMain.ResumeLayout(false);
             this.flpPatreon.ResumeLayout(false);
@@ -2112,6 +2140,7 @@
             this.flpCommunity.PerformLayout();
             this.flpDiscord.ResumeLayout(false);
             this.flpDiscord.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2352,5 +2381,8 @@
         private System.Windows.Forms.ToolStripMenuItem tsmiShowCursor;
         private System.Windows.Forms.ToolStripSeparator tssTrayCapture1;
         private System.Windows.Forms.ToolStripMenuItem tsmiTrayShowCursor;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.MenuStrip menuStrip1;
     }
 }

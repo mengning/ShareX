@@ -62,7 +62,7 @@ namespace ShareX
             get
             {
                 Version version = Version.Parse(Application.ProductVersion);
-                string title = string.Format("ShareX {0}.{1}", version.Major, version.Minor);
+                string title = string.Format("ScreenRecorder 1.0"); // {0}.{1}", version.Major, version.Minor);
                 if (version.Build > 0) title += "." + version.Build;
                 if (version.Revision > 0) title += "." + version.Revision;
                 if (Dev) title += " Dev";

@@ -220,7 +220,8 @@ namespace ShareX
         {
             if (e.Button == MouseButtons.Left)
             {
-                StartStopRecording();
+                Program.MainForm.StartStopRecording();
+                //StartStopRecording();
             }
         }
 
@@ -231,6 +232,7 @@ namespace ShareX
                 if (!taskSettings.CaptureSettings.ScreenRecordAskConfirmationOnAbort ||
                     MessageBox.Show(Resources.ScreenRecord_ConfirmCancel, "ShareX", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
                 {
+                    Program.MainForm.AbortRecording();
                     AbortRecording();
                 }
             }

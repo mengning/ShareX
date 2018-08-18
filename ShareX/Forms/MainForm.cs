@@ -2055,6 +2055,25 @@ namespace ShareX
             UpdateContextMenu();
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            StartStopRecording();
+        }
+        public void AbortRecording()
+        {
+            if (ScreenRecordManager.IsRecording)
+                Program.MainForm.button1.Text = "Start Recording";
+            else
+                Program.MainForm.button1.Text = "Stop Recording";
+        }
+        public void StartStopRecording()
+        {
+            if (ScreenRecordManager.IsRecording)
+                Program.MainForm.button1.Text = "Start Recording";
+            else
+                Program.MainForm.button1.Text = "Stop Recording";
+            TaskHelpers.StartScreenRecording(ScreenRecordOutput.FFmpeg, ScreenRecordStartMethod.Region);
+        }
         private void tsmiImagePreviewHide_Click(object sender, EventArgs e)
         {
             Program.Settings.ImagePreview = ImagePreviewVisibility.Hide;

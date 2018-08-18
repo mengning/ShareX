@@ -129,7 +129,7 @@
     <value>0, 0, 0, 0</value>
   </data>
   <data name="btnStart.Size" type="System.Drawing.Size, System.Drawing">
-    <value>96, 32</value>
+    <value>96, 30</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="btnStart.TabIndex" type="System.Int32, mscorlib">
@@ -142,7 +142,7 @@
     <value>btnStart</value>
   </data>
   <data name="&gt;&gt;btnStart.Type" xml:space="preserve">
-    <value>ShareX.HelpersLib.BlackStyleButton, ShareX.HelpersLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ShareX.HelpersLib.BlackStyleButton, ShareX.HelpersLib, Version=12.3.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;btnStart.Parent" xml:space="preserve">
     <value>pInfo</value>
@@ -160,19 +160,19 @@
     <value>0, 0, 0, 0</value>
   </data>
   <data name="lblTimer.Size" type="System.Drawing.Size, System.Drawing">
-    <value>80, 32</value>
+    <value>80, 30</value>
   </data>
   <data name="lblTimer.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
   <data name="lblTimer.Text" xml:space="preserve">
     <value>00:00:00</value>
-  <comment>@Invariant</comment></data>
+  </data>
   <data name="&gt;&gt;lblTimer.Name" xml:space="preserve">
     <value>lblTimer</value>
   </data>
   <data name="&gt;&gt;lblTimer.Type" xml:space="preserve">
-    <value>ShareX.HelpersLib.BlackStyleLabel, ShareX.HelpersLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ShareX.HelpersLib.BlackStyleLabel, ShareX.HelpersLib, Version=12.3.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;lblTimer.Parent" xml:space="preserve">
     <value>pInfo</value>
@@ -193,7 +193,7 @@
     <value>0, 0, 0, 0</value>
   </data>
   <data name="btnAbort.Size" type="System.Drawing.Size, System.Drawing">
-    <value>96, 32</value>
+    <value>96, 30</value>
   </data>
   <data name="btnAbort.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -205,7 +205,7 @@
     <value>btnAbort</value>
   </data>
   <data name="&gt;&gt;btnAbort.Type" xml:space="preserve">
-    <value>ShareX.HelpersLib.BlackStyleButton, ShareX.HelpersLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ShareX.HelpersLib.BlackStyleButton, ShareX.HelpersLib, Version=12.3.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;btnAbort.Parent" xml:space="preserve">
     <value>pInfo</value>
@@ -220,10 +220,10 @@
     <value>GrowAndShrink</value>
   </data>
   <data name="pInfo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 8</value>
+    <value>8, 7</value>
   </data>
   <data name="pInfo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>270, 32</value>
+    <value>270, 30</value>
   </data>
   <data name="pInfo.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -244,19 +244,19 @@
     <value>138, 17</value>
   </metadata>
   <data name="tsmiStart.Size" type="System.Drawing.Size, System.Drawing">
-    <value>104, 22</value>
+    <value>109, 22</value>
   </data>
   <data name="tsmiStart.Text" xml:space="preserve">
     <value>Start</value>
   </data>
   <data name="tsmiAbort.Size" type="System.Drawing.Size, System.Drawing">
-    <value>104, 22</value>
+    <value>109, 22</value>
   </data>
   <data name="tsmiAbort.Text" xml:space="preserve">
     <value>Abort</value>
   </data>
   <data name="cmsMain.Size" type="System.Drawing.Size, System.Drawing">
-    <value>105, 48</value>
+    <value>110, 48</value>
   </data>
   <data name="&gt;&gt;cmsMain.Name" xml:space="preserve">
     <value>cmsMain</value>
@@ -269,7 +269,7 @@
   </metadata>
   <data name="niTray.Text" xml:space="preserve">
     <value>ShareX</value>
-  <comment>@Invariant</comment></data>
+  </data>
   <data name="niTray.Visible" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -277,10 +277,10 @@
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
+    <value>6, 12</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>451, 235</value>
+    <value>451, 217</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>Manual</value>
